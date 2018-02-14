@@ -4,4 +4,4 @@
 
 feel free to use anywhich way you want
 
-the latex code is pretty untrained though
+the latex code is pretty ugly though
