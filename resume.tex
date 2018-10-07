@@ -2,8 +2,8 @@
 %% Resume of Michael Belousov
 %% feel free to copy as much as you'd like.
 %%
-%% The latex itself is a tad rusty, but it does the job.
-%% Future commits will do a better one.
+%% The LaTeX itself does the job.
+%% Future commits will improve on the formatting
 %%
 
 \documentclass[Letterpaper,11pt]{article}
@@ -13,11 +13,20 @@
 \usepackage[tmargin=0.5in,margin=0.6in]{geometry}
 \usepackage{multicol}
 \usepackage{mdwlist}
+\usepackage{amsmath}
+\usepackage{amssymb}
 
 \usepackage[compact]{titlesec}
 \titlespacing{\section}{0pt}{-0.8em}{-0.8em}
 \titlespacing{\subsection}{0pt}{-0.8em}{-0.8em}
 \titlespacing{\subsubsection}{0pt}{-0.8em}{-0.8em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Custom Commands
+
+\newcommand{\bul}{$\blacktriangleright$ }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
@@ -34,81 +43,105 @@
 \setlength{\columnsep}{1em}
 %\setlength{\columntopskip}{0em}
 
-\addtolength{\topmargin}{-2em}
+\addtolength{\topmargin}{-4em}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Header
 \textbf{\href{mailto:michael.belousov98@gmail.com}{\Large Michael Belousov}}\\
 \href{mailto:michael.belousov98@gmail.com}{michael.belousov98@gmail.com}\\
 Mobile : (203) 502-9425\\
-\href{https://MichaelBelousov.github.io/}{https://MichaelBelousov.github.io/}\\
+\href{https://MichaelBelousov.github.io/}{\texttt{https://MichaelBelousov.github.io}} $\gets$ I have a small blog, check it out\\
 \hrule
+\vspace{1em} % HACCCCK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section*{Objective}
 
 Merit an innovative software engineering position employing complex problem solving, and team initiative.
 
-\section*{Education}
 
-    \textsc{University of Connecticut}, Storrs, CT\\
-    \textit{Bachelor of Science}, Computer Science and Engineering, anticipated May 2019\\
-    GPA 3.7, on track to graduate in 3 years
+\vspace{-1em} % HACCCCK
+\begin{multicols}{2}
 
-    \textsc{Trumbull High School}, Trumbull, CT\\
-    GPA: 3.7, Honors with Distinction, Governor's Award
+    \section*{Education}
 
+        \textsc{University of Connecticut}, Storrs, CT\\
+        \textit{Bachelor of Science}, Computer Science and Engineering, anticipated May 2019\\
+        GPA 3.7, on track to graduate at the end of third year.
+    
     \subsubsection*{Notable Courses}
-    Algorithms and Complexity\\
-    Theory of Computation\\
-    Systems Programming\\
-    Probabilistic Performance of Computer Programs
+    
+        Algorithms and Complexity\\
+        Theory of Computation\\
+        Modern C++ Programming (the most fun CSE class at UCONN) \\
+        Probabilistic Performance of Computer Programs
+        
+\end{multicols}
 
+\vspace{-1.5em} % HACCCCK
 \section*{Experience}
+\vspace{0.1em}
 
     \textsc{Bentley Systems},
     \textit{Software Engineering Intern}\\
-    May 2018--\textit{anticipated} August 2018\\
-    % replace with constrained itemize
-        $\circ$ Tested and implemented algorithms for intelligent curve fitting of piecewise functions over elevation data for simulating drainage systems.
+    May 2018-- August 2018\\
+        \bul Tested and implemented algorithms (Visvalingam \& Whyatt, Ramer-Douglas-Peucker) 
+        for intelligent curve fitting of various functions over elevation data in 
+        drainage system simulation.
         \\
-        $\circ$ Implemented a React web front-end and ASP.NET-core back-end wrapping a C\# desktop application for estimating emergency preparedness in pipe systems with an intuitive slippy map interface.
+        \bul Implemented a React web front-end and ASP.NET-core back-end wrapping a C\# desktop 
+        application for estimating emergency preparedness in pipe systems with an intuitive 
+        slippy map interface.
+        \\
+        \bul Lead exploration of new technologies (e.g. Redux) for which Bentley Systems
+        had no established conventions.
 
     \textsc{UITS},
     \textit{Security Analyst}\\
     December 2016--\textit{Current}\\
-    % TODO: use \newcommand for bullet point
-    % replace with constrained itemize
-        $\circ$ Developed solutions and web applications for analyzing, maintaining, and automating UCONN security solutions, using a PHP, python XMLRPC server, JavaScript, bootstrap, web stack.
+        \bul Developed solutions and web applications for analyzing, maintaining, and automating UCONN network security
         \\
-        $\circ$ Built a python ecosystem for building local security and SVG reporting tools.
+        \bul Upgraded a PHP-Python2 XMLRPC + raw JavaScript web stack into bilingual Python3 
+        and configurable boilerplate code generation.
+        \\
+        \bul Built Python packaging into the development environment with git and 
+        dependency management.
+        \\
+        \bul Created an SVG network diagramming toolset using SNMP, CDP/LLDP scanning, 
+        and a sophisticated CISCO router CLI parser.
 
     \textsc{UCONN Speech and Hearing research},
-    \textit{Application Developer and IT}\\
-    March 2017--January 2018\\
-    % replace with constrained itemize
-        $\circ$ Created interactive simulation software for neurological navigation research and a TkInter Python app for top-down playback of participant navigation.
-
+    \textit{Sole Application Developer and IT Consultant}\\
+    March 2017--July 2018\\
+        \bul Created interactive simulation software (a game in Unreal Engine 4) 
+        for navigation tracking in neurological research, as the sole developer.
+        \\
+        \bul Built a TkInter Python app for top-down playback of participant navigation,
+        and as a GUI to a data and statistics aggregator for participant data..
+        
 \begin{multicols}{2}
 
     \subsection*{Technological Competencies}
 
-        C++, Python, C, GNU/Linux, git, vim, TypeScript, React, Node.js, GLSL
-        \\
-        Webpack, Java, HTML, JavaScript, SQL, PHP, Bootstrap, SCSS, CSS, Splunk
+        C++, Python, C, GNU/Linux+Bash, git, gitlab, vim, \\
+        TypeScript, React, Node.js, GLSL, C\#+ASP.NET, \\
+        Webpack, Java, HTML5, JavaScript, postgreSQL, \\ 
+        PHP, Bootstrap, CSS+sass/scss, Splunk, \LaTeX, \\
 
     \subsection*{Skills}
 
         Presentation, Mentoring\\
         Graphics, Visualization, Office Suites, Automation\\
-        3D Modeling and design for optimized rendering, Blender 3D + GIMP
+        3D Modeling and design for optimized rendering
 
 \end{multicols}
 
 \section*{Hobbies and Extracurricular}
 
-    Upsilon Pi Epsilon member, the computing honor society\\
-    3D Modeling, Animation, 3D Art, generative art and animation\\
-    Reading, writing, filming, casual gaming
+    \bul Upsilon Pi Epsilon member, the computing honor society\\
+    \bul 3D Art, procedural (computer-generated) art and animation\\
+    \bul Also: Reading, writing, filming, casual gaming, C++ template meta-programming
 
 \clearpage
 
 \end{document}
-
