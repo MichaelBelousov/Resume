@@ -24,7 +24,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Custom Commands
 
-\newcommand{\bul}{$\blacktriangleright$ }
+\newcommand\bul{$\blacktriangleright$ }
+\newcommand\link[2]{\href{#1}{\underline{#2}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -47,91 +48,100 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Header
-\textbf{\href{mailto:michael.belousov98@gmail.com}{\Large Michael Belousov}}\\
-\href{mailto:mikemikeb@protonmail.com}{mikemikeb@protonmail.com}\\
-Mobile : (203) 502-9425\\
-\href{https://mikemikeb.com}{\texttt{https://mikemikeb.com}} $\gets$ I have a small blog, check it out\\
+\textbf{\Large Michael Belousov}\\
+\link{mailto:mikemikeb@protonmail.com}{mikemikeb@protonmail.com}\\
+\link{https://mikemikeb.com}{\texttt{https://mikemikeb.com}} (if it's underlined it's a link!)
+\vspace{0.5em} % HACCCCK
 \hrule
-\vspace{1em} % HACCCCK
+\vspace{0.5em} % HACCCCK
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{multicols}{2}
 
-\vspace{0.3em}
+    \section*{Education}
 
-% \begin{multicols}{2}
+        \textsc{University of Connecticut}, Storrs, CT\\
+        \textit{Bachelor of Science}, Computer Science and Engineering, May 2019\\
+        GPA 3.7, graduated in 3 years.
 
-\section*{Objective}
+    \subsection*{Open-Source Contributions}
+        \bul \link{https://github.com/okonet/lint-staged}{\texttt{lint-staged}} npm package
+        \\
+        \bul \link{https://github.com/typescript-eslint/typescript-eslint}{\texttt{typescript-eslint}} npm package
+        \\
+        \bul \link{https://github.com/godotengine/godot}{Godot game engine}
+        \\
+        \bul \link{https://github.com/netaddr/netaddr}{\texttt{netaddr}} python package
+        \\
+        \bul my own npm package \link{https://www.npmjs.com/package/lazy-from}{\texttt{lazy-from}}
 
-    Create innovative software that solves general problems, and where
-    possible use it to spread the knowledge of programming.
 
-\section*{Education}
+\end{multicols}
 
-    \textsc{University of Connecticut}, Storrs, CT\\
-    \textit{Bachelor of Science}, Computer Science and Engineering, May 2019\\
-    GPA 3.7, graduated in 3 years.
-        
-% \end{multicols}
 
 \section*{Experience}
 
-    \textsc{Bentley Systems},
-    \textit{Software Engineer}\\
-    June 2019---Current\\
-        \bul Developed multiple full stack applications with Node.js, React.js, C++, ASP.NET C\#, C++, SQL[ite].
+    \textbf{\textsc{Bentley Systems}, \textit{Software Engineer}} (May 2018---Current)\\
+        \bul Led development and deployment of the entire iTwin platform Unreal Engine integration data pipeline, electron application, marketing webpages, tutorials, blogs, and update service
+            in Typescript and C++
         \\
-        \bul Maintained, and helped modernize, core C++ libraries and custom data persistence technology.
+        \bul Led development of the \textit{Transformation} core API for the iTwin platform, a TypeScript node.js API with a native C++ addon component
         \\
-        \bul Wrote the Unreal Engine Datasmith integration for the iTwin platform.
+        \bul Developed multiple full-stack applications and services with Node.js, React, ASP.NET C\#, C++, MongoDb, and SQLite
         \\
-        \bul Wrote several public and internal, technical and beginner, articles about using our open-source
-        software, on the \href{https://medium.com/itwinjs/community/home}{iTwin developer community blog}, such as
-\href{https://medium.com/itwinjs/introducing-bentley-imodel-react-hooks-8945a72711d2}{``Introducing \texttt{@bentley/imodel-react-hooks}''} and
-         \href{https://medium.com/itwinjs/writing-a-primitivetool-a044647f7f66}{``Writing a PrimitiveTool''}.
+        \bul Wrote several public and internal, technical and beginner, articles, as well as a webinar promoting my product on our
+        platform, see the \textbf{Technical Writing} section below
         \\
-        \bul Increased developer productivity in several ways including: setting up CI/CD (Azure Piplines and Github Actions) for new and old projects, profiling and tuning build tools like Webpack (3$\times$ speed increase in our case) and wrote custom tooling (ESLint rules) to prevent entire bug classes.
+        \bul Analysed performance of Node.js code with native components, found \link{https://github.com/nodejs/node-addon-api/issues/1140}{unbounded memory growth in Node.js},
+        and did some \link{https://github.com/MichaelBelousov/javascript-int64-benchmarks}{[micro]benchmarking of JavaScript integer64 representations}
         \\
-        \bul Contributed to open source projects that we used, such as \href{https://github.com/okonet/lint-staged}{\texttt{lint-staged}}, and \href{https://github.com/typescript-eslint/typescript-eslint}{\texttt{typescript-eslint}}.
+        \bul On several teams became a local expert in React, TypeScript, C++, CSS, Linux, and advanced Git
 
-    \textsc{ITS},
-    \textit{Security Analyst and Developer}\\
-    December 2016---\textit{2018}\\
+    \textbf{\textsc{ITS}, \textit{Security Analyst and Developer}} (December 2016---May 2019)\\
         \bul Created an SVG network diagramming toolset using SNMP, CDP scanning,
-        and a sophisticated CISCO router CLI parser.\\
-        \bul Migrated a PHP-Python2 XMLRPC + jQuery web stack into bilingual Python3+Vue.js
-        and generated PHP.
-
-    \textsc{UCONN Speech and Hearing research},
-    \textit{Private Application Developer and Technical Lead}\\
-    March 2017---July 2018\\
-        \bul Built interactive simulation software (in Unreal Engine 4)
-        for navigation tracking in neurological research, as a sole developer.
+        and a custom CISCO router CLI parser
         \\
-        \bul Built a TkInter Python app for visualization of data.
+        \bul Migrated a PHP-Python2 XMLRPC+jQuery web stack into bilingual Python3+Vue.js
+        with some PHP boilerplate generation
+
+    \textbf{\textsc{UCONN Speech and Hearing research}, \textit{Technical consultant}}\\
+    (March 2017---July 2018)\\
+        \bul Built interactive simulation software (a game in Unreal Engine 4)
+        for tracking navigation of users for neurological research
+        \\
+        \bul Built a TkInter Python app for top-down playback of participant sessions and export of data to Excel
         
 \begin{multicols}{2}
 
     \subsection*{Technical Competencies}
+        C++/C, Python, TypeScript, GNU/Linux+Bash,
+        \\
+        Git, React, Node.js, Rust, OpenGL/GLSL,
+        \\
+        .NET, HTML5, [Postgre]SQL[ite], MongoDb,
+        \\ 
+        PHP, Sass+CSS, Godot, Unreal Engine, Azure
+        \\
+        VSCode extensions, Electron, Java, Rust
 
-        C++/C, Python, GNU/Linux+Bash, Git, React, \\
-        TypeScript, Node.js, GLSL, C\#+.NET, Webpack, \\
-        Java, HTML5, JavaScript, [Postgre]SQL, MongoDb \\ 
-        PHP, Sass+CSS, Rust, Godot, Azure \\
-
-    \subsection*{Skills}
-
-        Technical writing, mentoring\\
-        Graphics, visualization, office suites, automation\\
-        Classical 3D modeling for optimized rendering
+    \subsection*{Technical Writing}
+        \link{https://developer.bentley.com/tutorials/itwin-unreal-controlling-your-imodel/}{iTwin Platform Unreal integration tutorials}
+        \\
+        \link{https://medium.com/itwinjs/introducing-bentley-imodel-react-hooks-8945a72711d2}{introducing @bentley/imodel-react-hooks}
+        \\
+        \link{https://medium.com/itwinjs/evolve-your-itwin-with-unreal-45206afe19f4}{Evolve your iTwin with Unreal}
+        \\
+        \link{https://event.on24.com/wcc/r/3758735/E87578AC3042C366C712CAFCB98A21E4?partnerref=SocialMedia}{Bringing your iTwin into Unreal (webinar video)}
 
 \end{multicols}
 
 \section*{Hobbies}
 
-    \bul 3D Art, procedural (computer-generated) art and animation.\\
-    \bul Writing programming languages and tooling, experimenting with new programming languages.\\
-    \bul I use a lot of \texttt{bash}, so much that I've gotten worried and am exploring \texttt{xonsh}.\\
-    \bul The occasional Game Jam.
+    \bul 3D Art, computer-generated art and animation, I love blender and have plans to contribute to it
+    \\
+    \bul Writing languages and tooling (VS Code extensions!), experimenting with new programming languages
+    \\
+    \bul I use a lot of \texttt{bash}. So much so that I've gotten a bit worried and tried \texttt{xonsh} but didn't like it
 
 \clearpage
 
