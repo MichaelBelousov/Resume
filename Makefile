@@ -1,6 +1,6 @@
 LC=latexmk -pdf
 LATEXMKFLAGS=--shell-escape
-NAME=resume
+NAME=MichaelBelousov_resume
 GARBAGE= *.aux *.log *.fls *.fdb* data/*.csvdat
 # TODO: locally install the latextools module,
 # TODO: add some vim bindings for generating tables, etc
