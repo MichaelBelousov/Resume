@@ -1,5 +1,7 @@
 # Resume
 
+> Archive, I have moved my resume from LaT<sub>E</sub>X to HTML5 and it's in my website repo now
+
 ### Michael Belousov's Resume
 
 
